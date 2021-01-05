@@ -1,7 +1,25 @@
 module CalendariumAnglicus
   class Temporale < CalendariumRomanum::Temporale
     # dates of movable feasts
-    module Dates < CalendariumRomanum::Temporale::Dates
+    module Dates
+      WEEK = CalendariumRomanum::Temporale::WEEK
+      # TODO This piece of shameful code was written by @igneus and demonstrates
+      #   how unflexible the machinery of CalendariumRomanum::Temporale currently is.
+      #   The date computing methods are Module class methods, but as such they cannot be
+      #   conveniently inherited.
+      class << self
+        parent = CalendariumRomanum::Temporale::Dates
+        parent.public_methods.each do |sym|
+          method = parent.method(sym)
+          params = method.parameters
+
+          if (params.size >= 1 && params[0][1] == :year) ||
+             sym.to_s =~ /_(after|before)$/
+            self.define_method sym, method.to_proc
+          end
+        end
+      end
+
       #~ def self.first_advent_sunday(year)
         #~ sunday_before(nativity(year)) - 3 * WEEK
       #~ end
@@ -186,6 +204,6 @@ module CalendariumAnglicus
           #~ end
         #~ end
       #~ end
-    #~ end
-  #~ end
+    end
+  end
 end

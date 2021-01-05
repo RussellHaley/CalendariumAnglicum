@@ -2,6 +2,10 @@ module CalendariumAnglicus
   class Temporale < CalendariumRomanum::Temporale
     # builds temporale Celebrations
     class CelebrationFactory < CalendariumRomanum::Temporale::CelebrationFactory
+      Ranks = CalendariumAnglicus::Ranks
+      Colours = CalendariumAnglicus::Colours
+      AbstractDate = CalendariumAnglicus::AbstractDate
+
       class << self
         def each
           return to_enum(__method__) unless block_given?
