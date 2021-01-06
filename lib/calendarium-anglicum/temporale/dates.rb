@@ -3,8 +3,8 @@ module CalendariumAnglicum
     # dates of movable feasts
     module Dates
       WEEK = CalendariumRomanum::Temporale::WEEK
-      # TODO This piece of shameful code was written by @igneus and demonstrates
-      #   how unflexible the machinery of CalendariumRomanum::Temporale currently is.
+      # TODO This McGyver-like work around was written by @igneus to handle
+      #   the completely different calendar system used by the Ordiniariate (Anglican refugees).
       #   The date computing methods are Module class methods, but as such they cannot be
       #   conveniently inherited.
       class << self
