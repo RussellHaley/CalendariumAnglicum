@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in calendarium-anglicus.gemspec
+# Specify your gem's dependencies in calendarium-anglicum.gemspec
 gemspec
 
 gem "rake", "~> 12.0"

@@ -1,10 +1,10 @@
-module CalendariumAnglicus
+module CalendariumAnglicum
   class Temporale < CalendariumRomanum::Temporale
     # builds temporale Celebrations
     class CelebrationFactory < CalendariumRomanum::Temporale::CelebrationFactory
-      Ranks = CalendariumAnglicus::Ranks
-      Colours = CalendariumAnglicus::Colours
-      AbstractDate = CalendariumAnglicus::AbstractDate
+      Ranks = CalendariumAnglicum::Ranks
+      Colours = CalendariumAnglicum::Colours
+      AbstractDate = CalendariumAnglicum::AbstractDate
 
       class << self
         def each

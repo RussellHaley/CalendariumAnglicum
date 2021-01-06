@@ -1,14 +1,14 @@
 # coding: utf-8
-require_relative 'lib/calendarium-anglicus/version'
+require_relative 'lib/calendarium-anglicum/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'calendarium-anglicus'
-  spec.version       = CalendariumAnglicus::VERSION
+  spec.name          = 'calendarium-anglicum'
+  spec.version       = CalendariumAnglicum::VERSION
   spec.authors       = ['Russell Haley']
   spec.email         = ['russ.haley@gmail.com']
 
   spec.summary       = %q{Library computing liturgical calendar of the Czech Old Catholic Church}
-  spec.homepage      = 'https://github.com/russellhaley/calendarium-anglicus'
+  spec.homepage      = 'https://github.com/russellhaley/calendarium-anglicum'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
 
   # Specify which files should be added to the gem when it is released.

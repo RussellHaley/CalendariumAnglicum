@@ -1,4 +1,4 @@
-module CalendariumAnglicus
+module CalendariumAnglicum
   module ValueObjectInterface
     attr_reader :symbol
     alias to_sym symbol

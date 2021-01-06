@@ -1,4 +1,4 @@
-module CalendariumAnglicus
+module CalendariumAnglicum
   class Temporale < CalendariumRomanum::Temporale
     # dates of movable feasts
     module Dates

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    calendarium-anglicus (0.1.0)
+    calendarium-anglicum (0.1.0)
       calendarium-romanum (= 0.8.0)
 
 GEM
@@ -36,7 +36,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  calendarium-anglicus!
+  calendarium-anglicum!
   rake (~> 12.0)
   rspec (~> 3.0)
 

@@ -1,4 +1,4 @@
-# CalendariumAnglicus
+# CalendariumAnglicum
 
 This repository contains code of a Ruby gem implementing Catholic liturgical calendar
 of the Ordinariate of the Chair of St. Peter (Anglican Patrimony).
@@ -12,7 +12,7 @@ This project is based on the most excellent CalendariumRomanum.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'calendarium-anglicus'
+gem 'calendarium-anglicum'
 ```
 
 And then execute:
@@ -21,7 +21,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install calendarium-anglicus
+    $ gem install calendarium-anglicum
 
 *** NOTE: THE REST HAS NOT BEEN PORTED FROM THE ORIGINAL TEMPLATE czech_old_catholic_calendar***
 ## Usage

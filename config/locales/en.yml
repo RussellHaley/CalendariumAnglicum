@@ -1,0 +1,114 @@
+en:
+  temporale:
+    season:
+      advent: Advent
+      christmas: Christmas Season
+      epiphany: Epiphany
+      time_after_epiphany: Time After Epiphany
+      lent: Lent
+      easter: Easter Season
+      time_after_trinity: Time After Trinity
+      #ordinary: Ordinary Time
+    solemnity:
+      nativity: Christmas
+      holy_family: The Holy Family
+      mother_of_god: Mary, Mother of God (Octave of Christmas)
+      epiphany: The Epiphany
+      baptism_of_lord: The Baptism of the Lord
+      septuagesima: Septuagesima
+      sexagesima: Sexagesima
+      quinquagesima: Quinquagesima
+      ash_wednesday: Ash Wednesday
+      passion_sunday: Passion Sunday
+      palm_sunday: Palm Sunday
+      good_friday: Good Friday
+      holy_saturday: Holy Saturday
+      easter_sunday: Easter Sunday
+      rogation_sunday: Rogation Sunday
+      ascension: The Ascension
+      pentecost: Whitsunday (Pentecost)
+      holy_trinity: Trinity Sunday
+      corpus_christi: Corpus Christi (The Body and Blood of Christ)
+      sacred_heart: The Sacred Heart of Jesus
+      mother_of_church: Mary, Mother of the Church
+      immaculate_heart: The Immaculate Heart of Mary
+      christ_king: Christ The King
+      saturday_memorial_bvm: The Memorial of the Blessed Virgin Mary on Saturday
+    #ordinary:
+      #sunday: '%{week} Sunday in Ordinary Time'
+      #ferial: '%{weekday}, %{week} week in Ordinary Time'
+    advent:
+      sunday: '%{week} Sunday of Advent'
+      ferial: '%{weekday}, %{week} week of Advent'
+      before_christmas: '%{day} December'
+    christmas:
+      nativity_octave:
+        ferial: '%{day} day of Christmas Octave'
+      sunday: '%{week} Sunday after the Nativity of the Lord'
+      ferial: '%{weekday} after Christmas Octave'
+    epiphany:
+      ferial: '%{weekday} of Epiphany'
+    time_after_epiphany:
+      ferial: '%{weekday}, %{week} week after Epiphany'      
+      sunday: '%{week} Sunday after Epiphany'      
+    lent:
+      after_ashes:
+        ferial: '%{weekday} after Ash Wednesday'
+      ferial: '%{weekday}, %{week} week of Lent'
+      sunday: '%{week} Sunday of Lent'
+      passion_week:
+        lady_day: 'Lady Day'
+        ferial: '%{weekday} in Passion Week'
+      holy_week:
+        ferial: 'Holy %{weekday}'
+        spy_wednesday: 'Spy Wednesday'
+    easter:
+      octave:
+        ferial: 'Easter %{weekday}'
+      sunday: '%{week} Sunday of Easter'
+      ferial: '%{weekday}, %{week} week of Easter'
+      rogation: 'Rogation %{weekday}'
+    pentecost:
+        octave:
+            ferial: '%Whit {weekday}'
+    time_after_trinity:
+      sunday: '%{week} Sunday after Trinity'
+      ferial: '%{weekday}, %{week} week after Trinity'
+    ember_days: 'Ember Days'  
+  rank:
+    '1_1': Easter triduum
+    '1_2': Primary liturgical days
+    '1_3': Solemnities in the General Calendar
+    '1_4': Proper solemnities
+    '2_5': Feasts of the Lord in the General Calendar
+    '2_6': Unprivileged Sundays
+    '2_7': Feasts of saints in the General Calendar
+    '2_8': Proper feasts
+    '2_9': Privileged ferials
+    '3_10': Obligatory memorials in the General Calendar
+    '3_11': Proper obligatory memorials
+    '3_12': Optional memorials
+    '3_13': Ferials
+    '4_0': Commemorations
+    short:
+      solemnity: solemnity
+      feast: feast
+      sunday: Sunday
+      memorial: memorial
+      memorial_opt: optional memorial
+      ferial: ferial
+      commemoration: commemoration
+  weekday:
+    '0': Sunday
+    '1': Monday
+    '2': Tuesday
+    '3': Wednesday
+    '4': Thursday
+    '5': Friday
+    '6': Saturday
+  colour:
+    violet: violet
+    white: white
+    green: green
+    red: red
+    rose: rose

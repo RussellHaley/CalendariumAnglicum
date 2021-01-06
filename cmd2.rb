@@ -1,4 +1,4 @@
-require 'calendarium-anglicus'
+require 'calendarium-anglicum'
 
 first, second, third, fourth, fifth = ARGV
 
@@ -11,11 +11,11 @@ end_month = fourth.to_i
 end_day = fifth.to_i
 
 
-sanctorale = CalendariumAnglicus::SanctoraleLoader.new.load_from_file 'data/ordinariate-en.txt'
-temporale = CalendariumAnglicus::Temporale.new(year)
+sanctorale = CalendariumAnglicum::SanctoraleLoader.new.load_from_file 'data/ordinariate-en.txt'
+temporale = CalendariumAnglicum::Temporale.new(year)
 
 
-CalendariumAnglicus::Calendar.new(year, sanctorale, temporale).each do |day|
+CalendariumAnglicum::Calendar.new(year, sanctorale, temporale).each do |day|
 	puts "Calendar Date: #{day.date} #{day.date.strftime('%A')}"
 		celebration = day.celebrations[0]
 		day.celebrations.each do | c |

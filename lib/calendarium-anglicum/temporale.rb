@@ -1,4 +1,4 @@
-module CalendariumAnglicus
+module CalendariumAnglicum
   class Temporale < CalendariumRomanum::Temporale
     class << self
       # TODO this is basically copy-pasted piece of CalendariumRomanum::Temporale.
@@ -37,7 +37,7 @@ module CalendariumAnglicus
               date_method = symbol
               C.new(
                 date_method,
-                CalendariumAnglicus::Temporale::CelebrationFactory.public_send(symbol)
+                CalendariumAnglicum::Temporale::CelebrationFactory.public_send(symbol)
               )
             end
           end
