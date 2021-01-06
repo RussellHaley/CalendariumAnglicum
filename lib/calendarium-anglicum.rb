@@ -1,10 +1,12 @@
 require 'calendarium-romanum'
+require 'i18n'
 
 module CalendariumAnglicum
   include CalendariumRomanum
 end
 
-#~ require 'calendarium-anglicum/i18n_setup'
+I18n.config.load_path += Dir[File.expand_path('../config/locales/*.yml', File.dirname(__FILE__))]
+
 require 'calendarium-anglicum/version'
 require 'calendarium-anglicum/data'
 require 'calendarium-anglicum/temporale/celebration_factory'
